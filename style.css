@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./public/Background_img.jpg);
+    background-size: 100%;
+
+}
+
+#titulo{
+   width: 300px;
+   height: 150px;
+
+}
+
+#card{
+    display: grid;
+    padding: 20px;
+    border: 3px solid black;
+    background-color: rgb(207, 181, 125);
+    border-radius: 5px;
+    color: rgba(121,9,22,1);
+    width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    gap: 10px   ;
+
+}
+#botaoAdd{
+    padding: 5px;
+    font-size: 15px;
+    border: rgb(0, 0, 0) 2px solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    font-weight: 600;
+}
+#botaoAdd:hover{
+    cursor: pointer;
+    background-color:  rgba(121,9,22,1);
+    transition: 500ms;
+    color: #fff;
+}
+.inputChar{
+    padding: 5px;
+    background-color: rgb(41, 41, 41);
+    border: 2px solid  rgba(121,9,22,1);
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+#content{
+    border: 3px black solid;
+    color: rgba(121,9,22,1);
+    background-color: rgb(207, 181, 125);
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-y: scroll;
+}
+table tr td{
+    padding: 8px;
+  border: 1px black solid;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+#botaoExcluir:hover{
+    cursor: pointer;
+}
+#botaoEditar:hover{
+    cursor: pointer;
+}
+
+@media (max-width:600px ) {
+    #card{
+        display: grid;
+        padding: 10px;
+        border: 3px solid black;
+        background-color: rgb(207, 181, 125);
+        border-radius: 5px;
+        color: rgba(121,9,22,1);
+        width: 320px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        gap: 10px   ;
+    }
+
+        table tr td{
+            padding: 3px;
+          border: 1px black solid;
+        }
+        img{
+            width: 35px;
+            height: 35px;
+        }
+}
+@media (max-width:300px ) {
+    #card{
+        display: grid;
+        border: 3px solid black;
+        background-color: rgb(207, 181, 125);
+        border-radius: 5px;
+        color: rgba(121,9,22,1);
+        width: 250px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        gap: 10px   ;
+    }
+
+        table tr td{
+          border: 1px black solid;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+        }
+        #tdAltura{
+            display: none;
+        }
+        #tdPeso{
+            display: none;
+        }
+        h3{
+            display: none;
+        }
+        #altTD{
+            display: none;
+        }
+        #pesoTD{
+            display: none;
+        }
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cria seu char</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="conteiner">
+
+        <img id="titulo" src="./public/titulo-removebg-preview.png" alt="">
+  
+
+            <div id="card">
+                <label for="nome">Nome do char:</label>
+                <input maxlength="8" type="text" placeholder="nome" name="nome" id="nome">
+
+                <label for="profissao">Profissao:</label>
+                <select name="profissao" id="profissao">
+                    <option value="">Selecione sua profissao</option>
+                    <option value="arqueiro">Arqueiro</option>
+                    <option value="guerreiro">Guerreiro</option>
+                    <option value="mago">Mago</option>
+                    <option value="druida">Druida</option>
+                </select>
+
+                <label for="altura">Altura:</label>
+                <input type="text" name="altura" id="altura" maxlength="1" placeholder="altura em metros"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+
+                <label for="peso">Peso:</label>
+                <input type="text" name="peso" id="peso" maxlength="3" placeholder="altura em metros"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'> 
+                
+                <div id="buttonCase">
+                    <input type="button" id="botaoAdd" onclick="char.add()" value="Adicionar">
+                </div>
+            </div>
+                
+            <div id="content">
+                <h3>Lista de Personagens:</h3>
+             <table>
+                <thead>
+                    <tr>
+                    <td id="imagemChar"></td>
+                    <td>Id</td>
+                    <td>Nome</td>
+                    <td>Profissao</td>
+                    <td id="altTD">Altura</td>
+                    <td id="pesoTD">Peso</td>
+                    <td>Ações</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                 
+                </tbody>
+             </table>
+                </div>
+
+    </div>  
+</body>
+</html>

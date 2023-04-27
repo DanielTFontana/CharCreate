@@ -1,0 +1,22 @@
+{
+  "name": "projeto_personagem",
+  "version": "1.0.0",
+  "description": "this project was developed for SENAC´s course. The main ideia was to create a web page to register something. I´ve took de inspiration of tibia and made a page to create characters. Hope you enjoy",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielTFontana/CharCreate.git"
+  },
+  "keywords": [
+    "char"
+  ],
+  "author": "Daniel T Fontana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielTFontana/CharCreate/issues"
+  },
+  "homepage": "https://github.com/DanielTFontana/CharCreate#readme"
+}
